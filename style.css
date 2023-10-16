@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Overpass:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+
+:root {
+/* ## Colors ### Primary */
+
+--light-red: hsl(0, 100%, 67%);
+--orangey-yellow: hsl(39, 100%, 56%);
+--green-teal: hsl(166, 100%, 37%);
+--cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+/* (background) */
+--light-slate-blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+
+
+/* (circle) */
+--violet-blue: hsla(256, 72%, 46%, 1);
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+
+
+/* ### Neutral */
+
+--white: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
+
+/* font-size */
+
+--font-size: 18px
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: var(--font-size);
+}
+
+ /* class tools */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center {
+    justify-content:stretch;
+}
+
+
+
+.container {
+    justify-content: center;
+
+    width: 100%;
+    height: 98vh;
+}
+
+.content {
+    display: flex;
+    height: 50%;
+    background: var(--white);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0 14px 30px var(--pale-blue), 0 10px 10px var(--light-lavender);
+}
+
+
+.result {
+    justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+    flex-basis: 50%;
+    border-radius: 30px;
+      background: linear-gradient(180deg, var(--light-slate-blue) 1%, var(--light-royal-blue) 98%);;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.res-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--pale-blue);
+}
+
+.circle {
+    justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100vmax;
+    background: var(--light-royal-blue) ;
+    background: linear-gradient(180deg, var(--light-royal-blue ) 1%, var(--light-slate-blue) 250%);;
+   ;
+
+
+    -webkit-border-radius: 100vmax;
+    -moz-border-radius: 100vmax;
+    -ms-border-radius: 100vmax;
+    -o-border-radius: 100vmax;
+}
+
+.circle h1 {
+    color: var(--white);
+    font-size: 4rem;
+}
+
+.circle p {
+    color: var(--light-slate-blue);
+}
+
+.result h3 {
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.res-info {
+    font-size: 15px;
+    color: var(--pale-blue);
+    font-weight: 500;
+}
+
+.summary {
+    flex-basis: 50%;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+
+  
+}
+
+/* style for summer heading */
+
+.summary h3 {
+    color: rgb(51, 41, 41);
+}
+
+
+ /* style for info div*/
+.info {
+    width: 93%;
+    padding: 12px 32px;
+    margin: 0.7rem;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.reaction {
+    background: rgb(252, 235, 235);
+}
+
+.reaction p {
+    color: var(--light-red);
+}
+
+
+
+.memory {
+    background: rgb(252, 240, 230);
+}
+
+.memory p {
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background: hsl(200, 100%, 96%);
+}
+
+.verbal p{
+    color: var(--green-teal);
+}
+
+.visual {
+    background: hsl(240, 100%, 98%) ;
+}
+
+.visual p {
+    color: var(--cobalt-blue);
+}
+
+/* style for info box text  */
+.p-align{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-gray-blue);
+}
+
+
+span i {
+    font-style: normal;
+    color: gray;
+}
+
+/* style for summery continue btn  */
+
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    font-size: 18px;
+    background: var(--dark-gray-blue);
+    color: var(--white);
+    margin-top: 2rem;
+    cursor: pointer;
+    transition:  width 0.3s;
+    border-radius: 10vmax;
+    -webkit-border-radius: 10vmax;
+    -moz-border-radius: 10vmax;
+    -ms-border-radius: 10vmax;
+    -o-border-radius: 10vmax;
+    -webkit-transition:  width 0.3s;
+    -moz-transition:  width 0.3s;
+    -ms-transition:  width 0.3s;
+    -o-transition:  width 0.3s;
+}
+
+
+.btn:hover {
+    background: var(--cobalt-blue) ;
+}
+
+
+
+
+/* style for coder name nad challenger  */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+/* style for responsive  */
+
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        margin-inline: auto;
+    }
+
+    .content {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .res-title {
+        margin-bottom: 1rem;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circle h1 {
+        font-size: 3rem;
+    }
+
+    .result h3 {
+        font-size: 1.5rem;
+        margin-block: 10px
+    }
+
+    .res-info {
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
